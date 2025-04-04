@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Domain Predictor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .top-bar {
+            display: flex;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 20px;
+            height: 65px;
+        }
+
+        .top-bar h1 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .container {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        fieldset {
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            width: 350px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 100%;
+            height: 40px;
+            margin: 10px 0;
+            padding: 0 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #6a11cb;
+        }
+
+        button {
+            width: 100%;
+            height: 40px;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: linear-gradient(135deg, #2575fc, #6a11cb);
+        }
+
+
+        .result {
+            margin-top: 10px; /* Adds spacing above the result */
+            text-align: center; /* Centers the result text */
+            font-size: 1.8em; /* Enlarges the text */
+            font-weight: bold; /* Makes the text bold */
+            background: rgba(0, 0, 0, 0.3); /* Adds a subtle background for visibility */
+            padding: 10px; /* Adds padding around the text */
+            border-radius: 8px; /* Adds rounded corners */
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <h1>Phishing Domain Predictor</h1>
+    </div>
+
+    <div class="container">
+        <form action="/" method="post">
+            <fieldset>
+                <input type="url" name="text" id="text" placeholder="Enter URL of the webpage" required>
+                <button type="submit">Check</button>
+            </fieldset>
+        </form>
+
+        <!-- Result Section: Only Rendered When There Is a Result -->
+        {% if result %}
+        <div class="result">
+            <p style="color: {{g_color}};"> The website is  {{ result }} site</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
