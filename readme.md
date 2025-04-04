@@ -1,7 +1,7 @@
 # Phishing Domain Detection
 
 ## Overview
-Phishing is a form of fraud where attackers pose as trusted entities to obtain sensitive details like login credentials or account information through emails or other communication channels. It is favored by attackers due to the simplicity of deceiving individuals into clicking seemingly legitimate but harmful links, compared to bypassing advanced security systems. The primary objective is to determine whether domains are genuine or malicious.
+Phishing is a form of fraud where attackers pose as trusted entities to obtain sensitive details like login credentials or account information through emails or other communication channels. It is favored by attackers due to the simplicity of deceiving individuals into clicking seemingly legitimate but harmful links, compared to bypassing advanced security systems. The primary objective is to determine whether domains are genuine or malicious. For this we have developed a web application using flask and Machine Learning techniques to detect if a site is a legitimate or a phishing site.
 
 ## Project Structure
 The project is organized as follows:
