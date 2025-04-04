@@ -39,6 +39,7 @@ Phishing Domain Detection
 
 
 
+
 ### Explanation of Components:
 1. **app**:
    - `templates/index.html`: The HTML file for the user interface, allowing users to interact with the application visually.
