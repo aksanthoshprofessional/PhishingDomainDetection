@@ -6,7 +6,38 @@ Phishing is a form of fraud where attackers pose as trusted entities to obtain s
 ## Project Structure
 The project is organized as follows:
 
-Phishing Domain Detection │ ├── app │ ├── templates │ │ └── index.html │ ├── init.py │ └── app.py │ ├── data │ ├── dataset_full.csv │ └── dataset_small.csv │ ├── docs │ └── Phishing Domain Detection.pdf │ ├── model │ ├── Feature_Names.pkl │ └── Phishing_Model.pkl │ ├── notebook │ └── phishing_domain_detection.ipynb │ ├── scripts │ ├── init.py │ ├── link_extractor.py │ └── model_trainer.py │ ├── init.py ├── main.py ├── readme.md └── requirements.txt
+```bash
+Phishing Domain Detection
+│
+├── app
+│   ├── templates
+│   │   └── index.html
+│   ├── __init__.py
+│   └── app.py
+│
+├── data
+│   ├── dataset_full.csv
+│   └── dataset_small.csv
+│
+├── docs
+│   └── Phishing Domain Detection.pdf
+│
+├── model
+│   ├── Feature_Names.pkl
+│   └── Phishing_Model.pkl
+│
+├── notebook
+│   └── phishing_domain_detection.ipynb
+│
+├── scripts
+│   ├── __init__.py
+│   └── link_extractor.py
+│
+├── __init__.py
+├── main.py
+├── readme.md
+└── requirements.txt
+```
 
 
 
@@ -44,19 +75,20 @@ Phishing Domain Detection │ ├── app │ ├── templates │ │ └�
    - The README file providing an overview, setup instructions, and project details.
 
 10. **requirements.txt**:
-    - Lists dependencies and libraries required to run the project, such as Flask and Scikit-learn.
+    - Lists dependencies and libraries required to run the project.
 
 ## Technologies Used
+```
 ●	Programming Language: Python
 ●	Machine Learning Libraries: Scikit-learn
 ●	Data Visualization: Matplotlib, Seaborn
 ●	Data Preprocessing: Numpy, Pandas, Joblib(To Load Data)
 ●	Networking Libraries: ipwhois, urllib3, dnspython, whois, requests.
 ●	Framework: Flask.
-
+```
 ## How to Run the Project
 1. Clone the repository:
-   git clone https://github.com/aksanthoshprofessional/PhishingDomainDetection.git
+  ``` git clone https://github.com/aksanthoshprofessional/PhishingDomainDetection.git ```
 
 2. Install the required Python packages:
     pip install -r requirements.txt
