@@ -62,7 +62,6 @@ Phishing Domain Detection
 6. **scripts**:
    - `__init__.py`: Initializes the scripts module, making it a package.
    - `link_extractor.py`: Script for extracting and analyzing links for phishing detection features.
-   - `model_trainer.py`: Contains code for training the machine learning model, preprocessing, and hyperparameter tuning.
 
 7. **__init__.py**:
    - Marker file for Python packages.
@@ -77,15 +76,16 @@ Phishing Domain Detection
     - Lists dependencies and libraries required to run the project, such as Flask and Scikit-learn.
 
 ## Technologies Used
-- Python  
-- Flask  
-- HTML/CSS  
-- Scikit-learn  
-- Pandas/NumPy  
+●	Programming Language: Python
+●	Machine Learning Libraries: Scikit-learn
+●	Data Visualization: Matplotlib, Seaborn
+●	Data Preprocessing: Numpy, Pandas, Joblib(To Load Data)
+●	Networking Libraries: ipwhois, urllib3, dnspython, whois, requests.
+●	Framework: Flask.
 
 ## How to Run the Project
 1. Clone the repository:
-   git clone https://github.com/
+   git clone https://github.com/aksanthoshprofessional/PhishingDomainDetection.git
 
 2. Install the required Python packages:
     pip install -r requirements.txt
